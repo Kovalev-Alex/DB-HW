@@ -68,7 +68,8 @@ insert into track (id, name, duration, album_id)
  	values (1, 'mix 1', 2023),
  		(2, 'mix 2', 2023),
  		(3, 'mix 3', 2023),
- 		(4, 'mix 4', 2023);
+ 		(4, 'mix 4', 2023)
+ 		(5, 'mix 5', 2020);
  		
  insert into track_mix (track_id, mix_id)
  	values (2, 1),

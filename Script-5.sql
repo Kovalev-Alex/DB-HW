@@ -1,3 +1,29 @@
+-- Задание 2
+-- п.1
+select name, duration from track t
+where duration = (select max(duration) from track)
+group by name, duration;
+
+-- п.2
+select name, duration from track t
+where duration >= 3.5*60
+group by name, duration;
+
+-- п.3
+select name from mix
+where year >= 2018 and year <= 2020;
+
+-- п.4
+select nickname from artist a 
+where nickname not like '% %' ;
+
+-- п.5 Небольшие изменения в коде: my --> me 
+select name from track
+where name like '% me %' or name like '% мой %';
+
+
+
+-- Задание 3
 -- п.1 
 select name, count(style_id) from "style" s 
 join style_artist sa on s.id  = sa.style_id
